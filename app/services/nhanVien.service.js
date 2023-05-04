@@ -13,8 +13,7 @@ class QlnvService {
             email: payload.email,
             diachi: payload.diachi,
             sdt: payload.sdt,
-            luong: payload.hsluong,
-            chucvu: payload.chucvu
+            macv: payload.macv
         };
         // Remove undefined fields
         Object.keys(nhanVien).forEach(
