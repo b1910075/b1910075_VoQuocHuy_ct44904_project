@@ -1,47 +1,37 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <nav class="container navbar rounded justify-content-center" style="background-color: antiquewhite;">
+    <div class="container-fluid">
+      <h1 class="navbar-brand" href="#">QUẢN LÍ NHÂN VIÊN</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+          <router-link :to="{name: 'trangchu'}">
+            <b class="nav-link active text-decoration-none" >Trang chủ</b>
+          </router-link>
+
+          <router-link :to="{name: 'nhanVien-index'}">
+            <a class="nav-link" >Nhân viên</a>
+          </router-link>
+
+          <router-link :to="{name: 'chucVu-index'}">
+            <a class="nav-link">Chức vụ</a>
+          </router-link>
+
+          <router-link :to="{name: 'luong-index'}">
+            <a class="nav-link" >Lương</a>
+          </router-link>
+
+        </div>
+      </div>
     </div>
-  </header>
+  </nav>
 
-  <main>
-    <TheWelcome />
-  </main>
+  <div id="app">
+    <router-view></router-view>
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
