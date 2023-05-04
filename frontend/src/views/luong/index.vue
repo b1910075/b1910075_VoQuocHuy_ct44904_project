@@ -24,10 +24,7 @@
         >
           Trang chủ
         </span>
-        <!-- <form method="POST" action="" class="d-flex">
-          <input class="form-control me-2" name="key" style="width: 600px" />
-          <button class="btn btn-success ml-1" type="submit">Tìm kiếm</button>
-        </form> -->
+    
       </div>
       <table class="table table-bordered table-condensed">
         <thead>
