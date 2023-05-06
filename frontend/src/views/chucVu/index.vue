@@ -46,7 +46,7 @@
             <td>{{ cv.chucvu }}</td>
             <td>{{ cv.hsluong }}</td>
             <td>
-              <span class="btn btn-primary m-1" @click="deleteNV(cv._id)"
+              <span class="btn btn-danger m-1" @click="deleteNV(cv._id)"
                 >Xóa</span
               >
             </td>

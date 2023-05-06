@@ -52,7 +52,7 @@
             <td>{{ nv.macv }}</td>
             <td>
               <span
-                class="btn btn-primary m-1"
+                class="btn btn-warning m-1"
                 @click="
                   $router.push({
                     name: 'nhanVien-sua',
@@ -62,7 +62,7 @@
               >
                 Sửa
               </span>
-              <span class="btn btn-primary m-1" @click="deleteNV(nv._id)"
+              <span class="btn btn-danger m-1" @click="deleteNV(nv._id)"
                 >Xóa</span
               >
             </td>
