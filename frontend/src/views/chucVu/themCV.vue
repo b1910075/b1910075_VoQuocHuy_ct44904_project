@@ -26,7 +26,7 @@
             <label class="col-md-2" for="hsluong">Hệ số lương:</label>
             <input type="text" id="hsluong" class="col-md-10" v-model="ChucVu.hsluong">
         </div>
-        <button class="btn btn-primary m-2 float-end" @click="addCV">Submit</button>
+        <div class="btn btn-primary m-2 float-end" @click="addCV">Submit</div>
     </form>
 </div>
 </body>
@@ -54,10 +54,10 @@ export default {
             }
             console.log(newChucVu);
             axios
-            .post('http://localhost:3000/api/qlnv/chucvu', newChucVu)
+            .post('http://localhost:3000/api/qlnv/chucvu/', newChucVu)
             .then((response) => {
                 console.log(response);
-                window.location.href = 'http://localhost:3001/chucvu';
+                window.location.href = 'http://localhost:3001/chucvu/';
             })
             .catch((error) => {
                 console.log(error);
